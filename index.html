@@ -12,9 +12,9 @@
     <title>Document</title>
 </head>
 <body class="max-w-[1200px] mx-auto">
-    <header class="bg-slate-800 pt-2 pb-4 px-2">
-        <nav class="flex justify-between p-2 items-center pb-4">
-            <h2 class="text-amber-400 font-bold text-2xl">Teeboi<span class="text-white">Gadg</span></h2>
+    <header class="bg-slate-800 pt-2 pb-4 px-14">
+        <nav class="flex justify-between items-center pt-2 pb-4">
+            <h2 class="text-amber-400 font-bold text-3xl">Teeboi<span class="text-white">Gadg</span></h2>
             <form class="flex-1 max-w-xl flex bg-white rounded-full overflow-hidden shadow-sm">
                 <input
                     class="outline-none px-4 py-2 flex-1 text-slate-800 text-sm"
@@ -26,10 +26,11 @@
                     <span>Search</span>
                 </button>
             </form>
+  
             <ul class="flex items-center gap-5 text-slate-200 text-sm">
-                <li class="hover:text-amber-300 cursor-pointer">About</li>
-                <li class="hover:text-amber-300 cursor-pointer">Contact Us</li>
-                <li class="hover:text-amber-300 cursor-pointer">FAQs</li>
+                <li class="cursor-pointer">About</li>
+                <li class="cursor-pointer"><a href="contact.html">Contact Us</a></li>
+                <li class="cursor-pointer">FAQs</li>
 
                 <li class="relative hover:text-amber-400 cursor-pointer">
                     <i class="fa-solid fa-cart-shopping text-lg"></i>
@@ -58,11 +59,13 @@
         </nav>
        
 
-        <nav class="bg-slate-700 px-6 mx-3">
+        <nav class="bg-slate-700 px-6">
             <ul class="flex gap-8  text-slate-100 text-sm justify-between">
-                <li class="flex gap-2 items-center text-center py-3 px-2 hover:text-amber-400 font-bold fo
+                <!-- <li class="flex gap-2 items-center text-center py-3 px-2 hover:text-amber-400 font-bold fo
                 hover:bg-slate-800 transition-colors cursor-pointer">
-                <i class="fa-solid fa-house"></i>  Home</li>
+                <a href="index.html"></a>
+                <i class="fa-solid fa-house"></i>  Home</li> -->
+                <li class="flex gap-2 items-center text-center py-3 px-2"><a href="index.html"></a> Home</li>
 
                 <li class="group relative py-3">
                     <span class="flex items-center gap-1 hover:text-amber-400 transition-colors cursor-pointer">
@@ -132,10 +135,45 @@
         </nav>
     </header>
 
+    <section >
+        <div class="max-w-[70%] flex justify-between pl-14 pr-6 bg-[#f6f6f8] pt-8 py-14">
+            <div>
+                <p class="mb-1 text-red-600 bg-transparent border-[2px] border-slate-400 cursor-pointer  w-fit px-2 py-1 rounded-lg text-sm font-semibold ">Pre-Order Now</p>
+                <p class="mt-0 text-slate-600">Starting at 1:30 PM WAT on October 16th.<br> Available from 23rd October</p>   
+                <h2 class="mt-5 text-slate-800 text-[1px] md:text-4xl font-bold mb-0.5 max-w-sm"><i class="fa-brands fa-apple"></i> Iphone Duo</h2>
+                <p class="mt-0 mb-4 font-sans text-sm text-slate-400">Two Screens. Endless Possibilities.</p>
+                <!-- <p class="text-slate-600 text-sm max-w-lg mb-7">
+                  Two displays, one device, built for people who live between work and everything else. Rumored dual-screen design with a hinge that disappears into the frame. Details are still under wraps, but early looks suggest this is Apple's boldest form factor yet.</p> -->
+                <p class="text-slate-600 text-sm max-w-[60%] mb-7" style="border: 1px solid red;">
+                  Apple’s first-ever foldable smartphone, the iPhone Duo combines two powerful experiences into one seamless device. Unveiled by Apple CEO John Ternus on September 9, 2026, its book-style design represents one of the biggest design overhauls in iPhone history, bridging the gap between a standard smartphone and an iPad mini. 
+                </p>
+                <button class="flex items-center gap-2 px-5 py-3 rounded-full shadow font-semibold text-sm bg-amber-400 text-slate-900 hover:bg-amber-300 hover:text-white transition-colors">
+                    <i class="fa-solid fa-bell"></i>
+                    Get notified when it's available
+                    </button>
+            </div>
+            <div>
+                <img src="images/Starwhite-1.jpg" alt="iPhone Duo" class="w-fit object-contain">
+            </div>
+        </div>
+        <div>
+            yoo
+        </div>
+    </section>
 
 
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    
+
+  
+
+
+
+
+
+
+
+<!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -160,10 +198,532 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
+</div> -->
+
+<!-- Featured Products -->
+    <section class="px-3 py-10 bg-slate-50">
+
+        <div class="flex items-end justify-between mb-8">
+            <div>
+            <h2 class="text-slate-900 text-3xl font-bold">Featured Products</h2>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+        <!-- Card 1 -->
+        <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+        <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+            <img src="https://placehold.co/500x500/1e293b/fbbf24?text=Galaxy+S24" alt="Samsung Galaxy S24 Ultra" class="w-full h-full object-contain">
+            <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Smartphones</span>
+            <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <p class="text-white font-medium mb-0.5">Quick details</p>
+            <p>6.8" AMOLED · 200MP camera · S Pen</p>
+            </div>
+        </div>
+        <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Samsung Galaxy S26 Ultra (256GB)</h3>
+            <div class="flex items-center justify-between mt-auto">
+            <span class="font-bold text-amber-500">₦1,780,200</span>
+            <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+            </button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+        <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+            <img src="https://placehold.co/500x500/1e293b/fbbf24?text=Pixel+9+Pro" alt="Google Pixel 9 Pro" class="w-full h-full object-contain">
+            <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Smartphones</span>
+            <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <p class="text-white font-medium mb-0.5">Quick details</p>
+            <p>Tensor G4 · AI camera suite</p>
+            </div>
+        </div>
+        <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Google Pixel 11 Pro</h3>
+            <div class="flex items-center justify-between mt-auto">
+            <span class="font-bold text-amber-500">$999</span>
+            <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+            </button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+        <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+            <img src="https://placehold.co/500x500/1e293b/fbbf24?text=iPhone+15+Pro" alt="Apple iPhone 15 Pro Max" class="w-full h-full object-contain">
+            <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Smartphones</span>
+            <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <p class="text-white font-medium mb-0.5">Quick details</p>
+            <p>Titanium build · A17 Pro chip</p>
+            </div>
+        </div>
+        <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Apple iPhone 15 Pro Max</h3>
+            <div class="flex items-center justify-between mt-auto">
+            <span class="font-bold text-amber-500">$1,299</span>
+            <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+            </button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+        <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+            <img src="https://placehold.co/500x500/1e293b/fbbf24?text=Z+Flip6" alt="Samsung Galaxy Z Flip6" class="w-full h-full object-contain">
+            <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Smartphones</span>
+            <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <p class="text-white font-medium mb-0.5">Quick details</p>
+            <p>Foldable · Flex Window display</p>
+            </div>
+        </div>
+        <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Samsung Galaxy Z Flip6</h3>
+            <div class="flex items-center justify-between mt-auto">
+            <span class="font-bold text-amber-500">$1,099</span>
+            <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+            </button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+        <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+            <img src="https://placehold.co/500x500/1e293b/fbbf24?text=AirPods+Pro+2" alt="Apple AirPods Pro 2" class="w-full h-full object-contain">
+            <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Audio</span>
+            <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <p class="text-white font-medium mb-0.5">Quick details</p>
+            <p>Active noise cancelling · USB-C</p>
+            </div>
+        </div>
+        <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Apple AirPods Pro 2</h3>
+            <div class="flex items-center justify-between mt-auto">
+            <span class="font-bold text-amber-500">$249</span>
+            <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+            </button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+        <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+        <img src="https://placehold.co/500x500/1e293b/fbbf24?text=Buds3+Pro" alt="Samsung Galaxy Buds3 Pro" class="w-full h-full object-contain">
+            <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Audio</span>
+            <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <p class="text-white font-medium mb-0.5">Quick details</p>
+            <p>Blade design · Hi-Fi 24bit audio</p>
+            </div>
+        </div>
+        <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Samsung Galaxy Buds3 Pro</h3>
+            <div class="flex items-center justify-between mt-auto">
+            <span class="font-bold text-amber-500">$199</span>
+            <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+            </button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+        <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+            <img src="https://placehold.co/500x500/1e293b/fbbf24?text=WH-1000XM5" alt="Sony WH-1000XM5" class="w-full h-full object-contain">
+            <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Audio</span>
+            <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <p class="text-white font-medium mb-0.5">Quick details</p>
+            <p>Industry-leading ANC · 30hr battery</p>
+            </div>
+        </div>
+        <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Sony WH-1000XM5</h3>
+            <div class="flex items-center justify-between mt-auto">
+            <span class="font-bold text-amber-500">$399</span>
+            <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+            </button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+        <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+            <img src="https://placehold.co/500x500/1e293b/fbbf24?text=JBL+Charge+5" alt="JBL Charge 5" class="w-full h-full object-contain">
+            <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Audio</span>
+            <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <p class="text-white font-medium mb-0.5">Quick details</p>
+            <p>Waterproof · 20hr playtime</p>
+            </div>
+        </div>
+        <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">JBL Charge 5</h3>
+            <div class="flex items-center justify-between mt-auto">
+            <span class="font-bold text-amber-500">$179</span>
+            <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+            </button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Card 9 -->
+         <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+        <img src="https://placehold.co/500x500/1e293b/fbbf24?text=SoundLink+Flex" alt="Bose SoundLink Flex" class="w-full h-full object-contain">
+        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Audio</span>
+        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <p class="text-white font-medium mb-0.5">Quick details</p>
+          <p>Rugged · PositionIQ technology</p>
+        </div>
+      </div>
+      <div class="p-4 flex flex-col gap-3 flex-1">
+        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Bose SoundLink Flex</h3>
+        <div class="flex items-center justify-between mt-auto">
+          <span class="font-bold text-amber-500">$149</span>
+          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+        <img src="https://placehold.co/500x500/1e293b/fbbf24?text=Emberton+II" alt="Marshall Emberton II" class="w-full h-full object-contain">
+        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Audio</span>
+        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <p class="text-white font-medium mb-0.5">Quick details</p>
+          <p>Signature sound · 30hr battery</p>
+        </div>
+      </div>
+      <div class="p-4 flex flex-col gap-3 flex-1">
+        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Marshall Emberton II</h3>
+        <div class="flex items-center justify-between mt-auto">
+          <span class="font-bold text-amber-500">$169</span>
+          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 11 -->
+    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+        <img src="https://placehold.co/500x500/1e293b/fbbf24?text=PS5+Slim" alt="Sony PlayStation 5 Slim" class="w-full h-full object-contain">
+        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Gaming</span>
+        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <p class="text-white font-medium mb-0.5">Quick details</p>
+          <p>1TB SSD · 4K 120fps</p>
+        </div>
+      </div>
+      <div class="p-4 flex flex-col gap-3 flex-1">
+        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Sony PlayStation 5 Slim</h3>
+        <div class="flex items-center justify-between mt-auto">
+          <span class="font-bold text-amber-500">$499</span>
+          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 12 -->
+    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+        <img src="https://placehold.co/500x500/1e293b/fbbf24?text=Xbox+Series+X" alt="Xbox Series X" class="w-full h-full object-contain">
+        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Gaming</span>
+        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <p class="text-white font-medium mb-0.5">Quick details</p>
+          <p>12 teraflops · Quick Resume</p>
+        </div>
+      </div>
+      <div class="p-4 flex flex-col gap-3 flex-1">
+        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Xbox Series X</h3>
+        <div class="flex items-center justify-between mt-auto">
+          <span class="font-bold text-amber-500">$499</span>
+          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 13 -->
+    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+        <img src="https://placehold.co/500x500/1e293b/fbbf24?text=Switch+OLED" alt="Nintendo Switch OLED" class="w-full h-full object-contain">
+        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Gaming</span>
+        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <p class="text-white font-medium mb-0.5">Quick details</p>
+          <p>7" OLED screen · Handheld + dock</p>
+        </div>
+      </div>
+      <div class="p-4 flex flex-col gap-3 flex-1">
+        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Nintendo Switch OLED</h3>
+        <div class="flex items-center justify-between mt-auto">
+          <span class="font-bold text-amber-500">$349</span>
+          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 14 -->
+    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+        <img src="https://placehold.co/500x500/1e293b/fbbf24?text=Watch+Series+10" alt="Apple Watch Series 10" class="w-full h-full object-contain">
+        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Wearables</span>
+        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <p class="text-white font-medium mb-0.5">Quick details</p>
+          <p>Always-on display · ECG app</p>
+        </div>
+      </div>
+      <div class="p-4 flex flex-col gap-3 flex-1">
+        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Apple Watch Series 10</h3>
+        <div class="flex items-center justify-between mt-auto">
+          <span class="font-bold text-amber-500">$429</span>
+          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 15 -->
+    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+        <img src="https://placehold.co/500x500/1e293b/fbbf24?text=Galaxy+Watch7" alt="Samsung Galaxy Watch7" class="w-full h-full object-contain">
+        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Wearables</span>
+        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <p class="text-white font-medium mb-0.5">Quick details</p>
+          <p>Wear OS · Body composition</p>
+        </div>
+      </div>
+      <div class="p-4 flex flex-col gap-3 flex-1">
+        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Samsung Galaxy Watch7</h3>
+        <div class="flex items-center justify-between mt-auto">
+          <span class="font-bold text-amber-500">$329</span>
+          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 16 -->
+    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+        <img src="https://placehold.co/500x500/1e293b/fbbf24?text=iPad+Air+M2" alt="iPad Air M2" class="w-full h-full object-contain">
+        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Tablets</span>
+        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <p class="text-white font-medium mb-0.5">Quick details</p>
+          <p>10.9" Liquid Retina · Apple Pencil Pro</p>
+        </div>
+      </div>
+      <div class="p-4 flex flex-col gap-3 flex-1">
+        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">iPad Air M2</h3>
+        <div class="flex items-center justify-between mt-auto">
+          <span class="font-bold text-amber-500">$599</span>
+          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 17 -->
+    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+        <img src="https://placehold.co/500x500/1e293b/fbbf24?text=Galaxy+Tab+S10" alt="Samsung Galaxy Tab S10" class="w-full h-full object-contain">
+        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Tablets</span>
+        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <p class="text-white font-medium mb-0.5">Quick details</p>
+          <p>AMOLED · S Pen included</p>
+        </div>
+      </div>
+      <div class="p-4 flex flex-col gap-3 flex-1">
+        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Samsung Galaxy Tab S10</h3>
+        <div class="flex items-center justify-between mt-auto">
+          <span class="font-bold text-amber-500">$649</span>
+          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 18 -->
+    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+        <img src="https://placehold.co/500x500/1e293b/fbbf24?text=Anker+737" alt="Anker 737 Power Bank" class="w-full h-full object-contain">
+        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Accessories</span>
+        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <p class="text-white font-medium mb-0.5">Quick details</p>
+          <p>140W · 24,000mAh capacity</p>
+        </div>
+      </div>
+      <div class="p-4 flex flex-col gap-3 flex-1">
+        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Anker 737 Power Bank</h3>
+        <div class="flex items-center justify-between mt-auto">
+          <span class="font-bold text-amber-500">$99</span>
+          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 19 -->
+    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+        <img src="https://placehold.co/500x500/1e293b/fbbf24?text=MagSafe+Charger" alt="Anker MagSafe Charger" class="w-full h-full object-contain">
+        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Accessories</span>
+        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <p class="text-white font-medium mb-0.5">Quick details</p>
+          <p>15W wireless · Snap-fit alignment</p>
+        </div>
+      </div>
+      <div class="p-4 flex flex-col gap-3 flex-1">
+        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Anker MagSafe Charger</h3>
+        <div class="flex items-center justify-between mt-auto">
+          <span class="font-bold text-amber-500">$39</span>
+          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 20 -->
+    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
+      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
+        <img src="https://placehold.co/500x500/1e293b/fbbf24?text=DJI+Mini+4+Pro" alt="DJI Mini 4 Pro Drone" class="w-full h-full object-contain">
+        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Gadgets</span>
+        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <p class="text-white font-medium mb-0.5">Quick details</p>
+          <p>4K/60fps · Omnidirectional sensing</p>
+        </div>
+      </div>
+      <div class="p-4 flex flex-col gap-3 flex-1">
+        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">DJI Mini 4 Pro Drone</h3>
+        <div class="flex items-center justify-between mt-auto">
+          <span class="font-bold text-amber-500">$759</span>
+          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Availability -->
+<section class="px-3 py-10 bg-slate-50">
+  <div class="rounded-lg border border-slate-700 bg-slate-800 px-6 py-10 md:px-10">
+    <div class="flex flex-col md:flex-row md:flex-wrap gap-10 justify-between">
+
+      <div class="flex items-start gap-4 flex-1 min-w-[200px]">
+        <div class="w-11 h-11 rounded-lg bg-slate-700 flex items-center justify-center shrink-0">
+          <i class="fa-solid fa-truck-fast text-amber-400"></i>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold mb-1">Fast &amp; reliable delivery</h3>
+          <p class="text-sm text-slate-400">Most orders ship same-day and arrive within 48 hours.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4 flex-1 min-w-[200px]">
+        <div class="w-11 h-11 rounded-lg bg-slate-700 flex items-center justify-center shrink-0">
+          <i class="fa-solid fa-headset text-amber-400"></i>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold mb-1">Customer service, 24/7</h3>
+          <p class="text-sm text-slate-400">Real people, always on, for setup help or returns.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4 flex-1 min-w-[200px]">
+        <div class="w-11 h-11 rounded-lg bg-slate-700 flex items-center justify-center shrink-0">
+          <i class="fa-solid fa-shield-halved text-amber-400"></i>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold mb-1">Secure checkout</h3>
+          <p class="text-sm text-slate-400">Encrypted payments, every time, no exceptions.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4 flex-1 min-w-[200px]">
+        <div class="w-11 h-11 rounded-lg bg-slate-700 flex items-center justify-center shrink-0">
+          <i class="fa-solid fa-certificate text-amber-400"></i>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold mb-1">Genuine warranty</h3>
+          <p class="text-sm text-slate-400">Every device is authentic and covered on arrival.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
 
+<!-- Ads section/Giveaway -->
+<section class="px-3 py-10 bg-slate-50">
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <!-- Deal card -->
+    <div class="rounded-lg p-8 md:p-10 flex flex-col justify-between min-h-[260px] bg-slate-800 border border-slate-700">
+      <div>
+        <p class="text-amber-400 text-sm font-semibold mb-3">Weekend reset</p>
+        <h3 class="text-white text-3xl font-bold mb-3 max-w-xs">30% off every pair of audio gear</h3>
+        <p class="text-sm text-slate-400 max-w-sm">Headphones, earbuds and speakers — discount applies automatically at checkout, no code needed.</p>
+      </div>
+      <div class="flex items-center gap-6 mt-8">
+        <button class="px-5 py-3 rounded-full font-semibold text-sm bg-amber-400 text-slate-900 hover:bg-amber-300 transition-colors">Shop the deal</button>
+        <div class="flex items-center gap-2 text-sm text-slate-400">
+          <i class="fa-regular fa-clock"></i>
+          <span>Ends in 47:12:00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Giveaway card -->
+    <div class="rounded-lg p-8 md:p-10 flex flex-col justify-between min-h-[260px] bg-slate-900 border border-slate-700">
+      <div>
+        <p class="text-amber-400 text-sm font-semibold mb-3">This month's giveaway</p>
+        <h3 class="text-white text-3xl font-bold mb-3 max-w-xs">Win a PlayStation 5 &amp; two controllers</h3>
+        <p class="text-sm text-slate-400 max-w-sm">Every purchase over $50 earns an entry. Winner announced live at month end.</p>
+      </div>
+      <div class="flex items-center gap-6 mt-8">
+        <button class="px-5 py-3 rounded-full font-semibold text-sm border border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-slate-900 transition-colors">Enter giveaway</button>
+        <div class="flex items-center gap-2 text-sm text-slate-400">
+          <i class="fa-solid fa-users"></i>
+          <span>3,214 entries so far</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
 
@@ -192,6 +752,13 @@
 
 
 
+
+
+
+
+
+
+   
 
 </body>
 </html>
