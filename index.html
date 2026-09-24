@@ -1,179 +1,484 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-   
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
     <script src="tailwind.js"></script>
     <title>Document</title>
-</head>
-<body class="max-w-[1200px] mx-auto">
+  </head>
+  <body class="max-w-[1200px] mx-auto">
     <header class="bg-slate-800 pt-2 pb-4 px-10">
-        <nav class="flex justify-between items-center pt-2 pb-4">
-            <h2 class="text-amber-400 font-bold text-3xl">Teeboi<span class="text-white">Gadg</span></h2>
-            <form class="flex-1 max-w-xl flex bg-white rounded-full overflow-hidden shadow-sm">
-                <input
-                    class="outline-none px-4 py-2 flex-1 text-slate-800 text-sm"
-                    type="search"
-                    placeholder="Search for products, brands and more">
-                <button type="submit"
-                    class="bg-amber-400 hover:bg-amber-300 px-5 text-slate-900 font-medium text-sm flex items-center gap-2">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <span>Search</span>
-                </button>
-            </form>
-  
-            <ul class="flex items-center gap-5 text-slate-200 text-sm">
-                <li class="cursor-pointer">About</li>
-                <li class="cursor-pointer"><a href="contact.html">Contact Us</a></li>
-                <li class="cursor-pointer">FAQs</li>
+      <nav class="flex justify-between items-center pt-2 pb-4">
+        <h2 class="text-amber-400 font-bold text-3xl">
+          Teeboi<span class="text-white">Gadg</span>
+        </h2>
+        <form
+          class="flex-1 max-w-xl flex bg-white rounded-full overflow-hidden shadow-sm"
+        >
+          <input
+            class="outline-none px-4 py-2 flex-1 text-slate-800 text-sm"
+            type="search"
+            placeholder="Search for products, brands and more"
+          />
+          <button
+            type="submit"
+            class="bg-amber-400 hover:bg-amber-300 px-5 text-slate-900 font-medium text-sm flex items-center gap-2"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Search</span>
+          </button>
+        </form>
 
-                <li class="relative hover:text-amber-400 cursor-pointer">
-                    <i class="fa-solid fa-cart-shopping text-lg"></i>
-                    <span class="absolute -top-2 -right-2 bg-amber-400 text-slate-900 text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
-                    0
-                    </span>
-                </li>
-                <details class="relative">
-                <summary class="cursor-pointer list-none">
-                    <i class="fa-solid fa-circle-user text-white text-2xl"></i>
-                </summary>
+        <ul class="flex items-center gap-5 text-slate-200 text-sm">
+          <li class="cursor-pointer hover:text-amber-300">About</li>
+          <li class="hover:text-amber-300 cursor-pointer"><a href="contact.html">Contact Us</a></li>
+          <li class="cursor-pointer hover:text-amber-300">FAQs</li>
 
-                <div class="absolute right-0 mt-3 w-56 bg-white rounded-lg shadow-lg p-4 z-50">
-                    <button class="w-full bg-amber-400 hover:bg-amber-300 text-white font-semibold py-2 rounded-md mb-3">
-                    Create Account
-                    </button>
-                    <p class="text-sm text-center text-gray-700">
-                    Already have an account?<br>
-                    <a href="#" class="text-amber-400 underline hover:text-amber-300">Log in now</a>
-                    </p>
-                </div>
-            </details>
+          <li class="relative hover:text-amber-400 cursor-pointer">
+            <i class="fa-solid fa-cart-shopping text-lg"></i>
+            <span
+              class="absolute -top-2 -right-2 bg-amber-400 text-slate-900 text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center"
+            >
+              0
+            </span>
+          </li>
+          <details class="relative">
+            <summary class="cursor-pointer list-none">
+              <i class="fa-solid fa-circle-user text-white text-2xl"></i>
+            </summary>
 
-            </ul>
-            
-        </nav>
-       
+            <div
+              class="absolute right-0 mt-3 w-56 bg-white rounded-lg shadow-lg p-4 z-50"
+            >
+              <button
+                class="w-full bg-amber-400 hover:bg-amber-300 text-white font-semibold py-2 rounded-md mb-3"
+              >
+                Create Account
+              </button>
+              <p class="text-sm text-center text-gray-700">
+                Already have an account?<br />
+                <a
+                  href="#"
+                  class="text-amber-400 underline hover:text-amber-300"
+                  >Log in now</a
+                >
+              </p>
+            </div>
+          </details>
+        </ul>
+      </nav>
 
-        <nav class="bg-slate-700 px-6">
-            <ul class="flex gap-8  text-slate-100 text-sm justify-between">
-                <!-- <li class="flex gap-2 items-center text-center py-3 px-2 hover:text-amber-400 font-bold fo
+      <nav class="bg-slate-700 px-6">
+        <ul class="flex gap-8 text-slate-100 text-sm justify-between">
+          <!-- <li class="flex gap-2 items-center text-center py-3 px-2 hover:text-amber-400 font-bold fo
                 hover:bg-slate-800 transition-colors cursor-pointer">
                 <a href="index.html"></a>
                 <i class="fa-solid fa-house"></i>  Home</li> -->
-                <li class="flex gap-2 items-center text-center py-3 px-2"><a href="index.html"></a> Home</li>
+          <li class="flex gap-2 items-center text-center py-3 px-2">
+            <a href="index.html"></a> Home
+          </li>
 
-                <li class="group relative py-3">
-                    <span class="flex items-center gap-1 hover:text-amber-400 transition-colors cursor-pointer">
-                    Smartphones & Tablets <i class="fa-solid fa-chevron-down text-[10px] mt-0.5"></i>
-                    </span>
-                    <ul class="absolute left-0 top-full hidden group-hover:block bg-slate-800 text-white rounded-b-lg shadow-lg min-w-[180px] py-2 z-10">
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Apple</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Samsung</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Oppo</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Google</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Xiaomi</li>
-                    </ul>
-                </li>
-
-
-                <li class="group relative py-3">
-                    <span class="flex items-center gap-1 hover:text-amber-400 transition-colors cursor-pointer">
-                    Laptops <i class="fa-solid fa-chevron-down text-[10px] mt-0.5"></i>
-                    </span>
-                    <ul class="absolute left-0 top-full hidden group-hover:block text-white bg-slate-800 rounded-b-lg shadow-lg min-w-[160px] py-2 z-10">
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">MacBook</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">HP</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Lenovo</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Dell</li>
-                    </ul>
-                </li>
-
-                <li class="group relative py-3">
-                    <span class="flex items-center gap-1 hover:text-amber-400 transition-colors cursor-pointer">
-                    Accessories <i class="fa-solid fa-chevron-down text-[10px] mt-0.5"></i>
-                    </span>
-                    <ul class="absolute left-0 top-full hidden group-hover:block text-white bg-slate-800 rounded-b-lg shadow-lg min-w-[200px] py-2 z-10">
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Memory Cards</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Phone Casings</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Flash Drives</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Mouse & Keyboard</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Power Banks & Chargers</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Screen Protectors</li>
-                    </ul>
-                </li>
-
-                <li class="group relative py-3">
-                    <span class="flex items-center gap-1 hover:text-amber-400 transition-colors cursor-pointer">
-                    Audio & Wearables <i class="fa-solid fa-chevron-down text-[10px] mt-0.5"></i>
-                    </span>
-                    <ul class="absolute left-0 top-full hidden group-hover:block text-white bg-slate-800 rounded-b-lg shadow-lg min-w-[180px] py-2 z-10">
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Wireless headphones</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Airpods</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Bluetooth Speakers</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Smartwatches</li>
-                    </ul>
-                </li>
-                <li class="group relative py-3">
-                    <span class="flex items-center gap-1 hover:text-amber-400 transition-colors cursor-pointer">
-                    Digital Gadgets <i class="fa-solid fa-chevron-down text-[10px] mt-0.5"></i>
-                    </span>
-                    <ul class="absolute left-0 top-full hidden group-hover:block text-white bg-slate-800 rounded-b-lg shadow-lg min-w-[180px] py-2 z-10">
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Gaming Consoles</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Handheld devices</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Gaming Consoles</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Cameras</li>
-                        <li class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer">Drones</li>
-                    </ul>
-                </li>
-
+          <li class="group relative py-3">
+            <span
+              class="flex items-center gap-1 hover:text-amber-400 transition-colors cursor-pointer"
+            >
+              Smartphones & Tablets
+              <i class="fa-solid fa-chevron-down text-[10px] mt-0.5"></i>
+            </span>
+            <ul
+              class="absolute left-0 top-full hidden group-hover:block bg-slate-800 text-white rounded-b-lg shadow-lg min-w-[180px] py-2 z-10"
+            >
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Apple
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Samsung
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Oppo
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Google
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Xiaomi
+              </li>
             </ul>
-        </nav>
-    </header>
+          </li>
 
-    <section class="px-10 flex bg-[#f6f6f8]">
-        <div class="max-w-[70%] flex justify-between pl-14 pr-6 bg-[#f6f6f8] pt-8 py-14">
-            <div>
-                <p class="mb-1 text-red-600 bg-transparent border-[2px] border-slate-400 cursor-pointer  w-fit px-2 py-1 rounded-lg text-sm font-semibold ">Pre-Order Now</p>
-                <p class="mt-0 text-slate-600">Starting at 1:30 PM WAT on October 16th.<br> Available from 23rd October</p>   
-                <h2 class="mt-5 text-slate-800 text-[1px] md:text-4xl font-bold mb-0.5 max-w-sm"><i class="fa-brands fa-apple"></i> Iphone Duo</h2>
-                <p class="mt-0 mb-4 font-sans text-sm text-slate-400">Two Screens. Endless Possibilities.</p>
-                <!-- <p class="text-slate-600 text-sm max-w-lg mb-7">
+          <li class="group relative py-3">
+            <span
+              class="flex items-center gap-1 hover:text-amber-400 transition-colors cursor-pointer"
+            >
+              Laptops
+              <i class="fa-solid fa-chevron-down text-[10px] mt-0.5"></i>
+            </span>
+            <ul
+              class="absolute left-0 top-full hidden group-hover:block text-white bg-slate-800 rounded-b-lg shadow-lg min-w-[160px] py-2 z-10"
+            >
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                MacBook
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                HP
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Lenovo
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Dell
+              </li>
+            </ul>
+          </li>
+
+          <li class="group relative py-3">
+            <span
+              class="flex items-center gap-1 hover:text-amber-400 transition-colors cursor-pointer"
+            >
+              Accessories
+              <i class="fa-solid fa-chevron-down text-[10px] mt-0.5"></i>
+            </span>
+            <ul
+              class="absolute left-0 top-full hidden group-hover:block text-white bg-slate-800 rounded-b-lg shadow-lg min-w-[200px] py-2 z-10"
+            >
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Memory Cards
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Phone Casings
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Flash Drives
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Mouse & Keyboard
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Power Banks & Chargers
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Screen Protectors
+              </li>
+            </ul>
+          </li>
+
+          <li class="group relative py-3">
+            <span
+              class="flex items-center gap-1 hover:text-amber-400 transition-colors cursor-pointer"
+            >
+              Audio & Wearables
+              <i class="fa-solid fa-chevron-down text-[10px] mt-0.5"></i>
+            </span>
+            <ul
+              class="absolute left-0 top-full hidden group-hover:block text-white bg-slate-800 rounded-b-lg shadow-lg min-w-[180px] py-2 z-10"
+            >
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Wireless headphones
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Airpods
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Bluetooth Speakers
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Smartwatches
+              </li>
+            </ul>
+          </li>
+          <li class="group relative py-3">
+            <span
+              class="flex items-center gap-1 hover:text-amber-400 transition-colors cursor-pointer"
+            >
+              Digital Gadgets
+              <i class="fa-solid fa-chevron-down text-[10px] mt-0.5"></i>
+            </span>
+            <ul
+              class="absolute left-0 top-full hidden group-hover:block text-white bg-slate-800 rounded-b-lg shadow-lg min-w-[174px] py-2 z-10"
+            >
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Gaming Consoles
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Handheld devices
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Gaming Consoles
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Cameras
+              </li>
+              <li
+                class="px-4 py-2 hover:bg-slate-700 hover:text-amber-300 cursor-pointer"
+              >
+                Drones
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+<div class="w-full bg-red-600 text-white  overflow-hidden whitespace-nowrap">
+    <div class="inline-flex animate-marquee py-2">
+      <span class="mx-8 text-sm font-semibold">Deal of the Day - Apple Watch Ultra SE</span>
+      <span class="mx-8 text-sm font-semibold">Best Selling This Week - Samsung S26</span>
+      <span class="mx-8 text-sm font-semibold">NEW - iPhone Duo Pre-Order Now Live</span>
+      <span class="mx-8 text-sm font-semibold">Best Selling This Week - DEll Latitude 7290</span>
+    </div>
+  </div>
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 overflow-hidden rounded-base md:h-96">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src=""
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src=""
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src=""
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="/docs/images/carousel/carousel-4.svg"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="/docs/images/carousel/carousel-5.svg"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+      </div>
+      <!-- Slider indicators -->
+      <div
+        class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+      >
+        <button
+          type="button"
+          class="w-3 h-3 rounded-base"
+          aria-current="true"
+          aria-label="Slide 1"
+          data-carousel-slide-to="0"
+        ></button>
+        <button
+          type="button"
+          class="w-3 h-3 rounded-base"
+          aria-current="false"
+          aria-label="Slide 2"
+          data-carousel-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          class="w-3 h-3 rounded-base"
+          aria-current="false"
+          aria-label="Slide 3"
+          data-carousel-slide-to="2"
+        ></button>
+        <button
+          type="button"
+          class="w-3 h-3 rounded-base"
+          aria-current="false"
+          aria-label="Slide 4"
+          data-carousel-slide-to="3"
+        ></button>
+        <button
+          type="button"
+          class="w-3 h-3 rounded-base"
+          aria-current="false"
+          aria-label="Slide 5"
+          data-carousel-slide-to="4"
+        ></button>
+      </div>
+      <!-- Slider controls -->
+      <button
+        type="button"
+        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev
+      >
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        >
+          <svg
+            class="w-5 h-5 text-white rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m15 19-7-7 7-7"
+            />
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button
+        type="button"
+        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next
+      >
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        >
+          <svg
+            class="w-5 h-5 text-white rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m9 5 7 7-7 7"
+            />
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+
+
+    <section class="pl-10 pr-6 py-5 flex bg-[#f6f6f8]">
+      <div class="max-w-[55%]">
+        <p
+          class="mb-1 text-red-600 bg-transparent border-[2px] border-slate-400 cursor-pointer w-fit px-2 py-1 rounded-lg text-sm font-semibold"
+        >
+          Pre-Order Now
+        </p>
+        <p class="mt-0 text-slate-600">
+          Starting at 1:30 PM WAT on October 16th.<br />
+          Available from 23rd October
+        </p>
+        <h2
+          class="mt-4 text-slate-800 text-[2.65rem] font-bold mb-0.5 max-w-sm"
+        >
+          <i class="fa-brands fa-apple"></i> Iphone Duo
+        </h2>
+        <p class="mt-0 mb-3 font-sans text-[1rem] text-slate-400">
+          Two Screens. Endless Possibilities.
+        </p>
+        <!-- <p class="text-slate-600 text-sm max-w-lg mb-7">
                   Two displays, one device, built for people who live between work and everything else. Rumored dual-screen design with a hinge that disappears into the frame. Details are still under wraps, but early looks suggest this is Apple's boldest form factor yet.</p> -->
-                <p class="text-slate-600 text-sm max-w-[60%] mb-7" style="border: 1px solid red;">
-                  Apple’s first-ever foldable smartphone, the iPhone Duo combines two powerful experiences into one seamless device. Unveiled by Apple CEO John Ternus on September 9, 2026, its book-style design represents one of the biggest design overhauls in iPhone history, bridging the gap between a standard smartphone and an iPad mini. 
-                </p>
-                <button class="flex items-center gap-2 px-5 py-3 rounded-full shadow font-semibold text-sm bg-amber-400 text-slate-900 hover:bg-amber-300 hover:text-white transition-colors">
-                    <i class="fa-solid fa-bell"></i>
-                    Get notified when it's available
-                    </button>
-            </div>
-            <div>
-                <img src="images/Starwhite-1.jpg" alt="iPhone Duo" class="w-fit object-contain">
-            </div>
-        </div>
-        <div class="max-w-[30%]">
-            yoo
-        </div>
+        <p class="text-slate-600 text-justify text-[1rem] max-w-[60%] mb-7">
+          Apple’s first-ever foldable smartphone, the iPhone Duo combines two
+          powerful experiences into one seamless device. Unveiled by Apple CEO
+          John Ternus on September 9, 2026, its book-style design represents one
+          of the biggest design overhauls in iPhone history, bridging the gap
+          between a standard smartphone and an iPad mini.
+        </p>
+        <button
+          class="flex items-center gap-2 px-5 py-3 rounded-full shadow font-semibold text-sm bg-amber-400 text-slate-900 hover:bg-amber-300 hover:text-white transition-colors"
+        >
+          <i class="fa-solid fa-bell"></i>
+          Get notified when it's available
+        </button>
+      </div>
+
+      <div class="max-w-[45%]">
+        <img
+          src="images/Starwhite-1 - Copy.jpg"
+          alt="iPhone Duo"
+          class="w-full h-[100%] object-fill"
+        />
+      </div>
     </section>
 
-
-
-    
-
-  
-
-
-
-
-
-
-
-<!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -200,611 +505,1055 @@
   </a>
 </div> -->
 
-<!-- Featured Products -->
+
+
+
+
+    <!-- Featured Products -->
     <section class="px-10 py-10 bg-slate-200">
-
-        <div class="flex items-end justify-between mb-8">
-            <div>
-            <h2 class="text-slate-900 text-3xl font-bold">Featured Products</h2>
-            </div>
+      <div class="flex items-end justify-between mb-8">
+        <div>
+          <h2 class="text-slate-900 text-3xl font-bold">Featured Products</h2>
         </div>
+      </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
         <!-- Card 1 -->
-        <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-        <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-            <img src="images/S26-Utra.WEBP" alt="Samsung Galaxy S26 Ultra" class="w-full h-full object-contain">
-            <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Smartphones</span>
-            <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-            <p class="text-white font-medium mb-0.5">Quick details</p>
-            <p>A powerhouse flagship featuring a premium titanium frame, an integrated S Pen, and an exceptional 200MP camera system with advanced Galaxy AI capabilities.</p>
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/S26-Utra.WEBP"
+              alt="Samsung Galaxy S26 Ultra"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Smartphones</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                A powerhouse flagship featuring a premium titanium frame, an
+                integrated S Pen, and an exceptional 200MP camera system with
+                advanced Galaxy AI capabilities.
+              </p>
             </div>
-        </div>
-        <div class="p-4 flex flex-col flex-1">
-            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Samsung Galaxy S26 Ultra (256GB)</h3>
+          </div>
+          <div class="p-4 flex flex-col flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              Samsung Galaxy S26 Ultra (256GB)
+            </h3>
             <p>Status: Brand New</p>
             <div class="flex items-center justify-between mt-auto">
-            <span class="font-bold text-amber-500">₦1,550,000</span>
-            <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-            </button>
+              <span class="font-bold text-amber-500">₦1,550,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
             </div>
-        </div>
+          </div>
         </div>
 
         <!-- Card 2 -->
-        <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-        <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-            <img src="images/Google-pixel.JPG" alt="Google Pixel 11 Pro " class="w-full h-full object-contain">
-            <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Smartphones</span>
-            <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-            <p class="text-white font-medium mb-0.5">Quick details</p>
-            <p>Google's latest cutting-edge smartphone built around deep Google AI integration, offering top-tier computational photography and an ultra-smooth stock Android experience.</p>
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/Google-pixel.JPG"
+              alt="Google Pixel 11 Pro "
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Smartphones</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                Google's latest cutting-edge smartphone built around deep Google
+                AI integration, offering top-tier computational photography and
+                an ultra-smooth stock Android experience.
+              </p>
             </div>
-        </div>
-        <div class="p-4 flex flex-col gap-3 flex-1">
-            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Google Pixel 11 Pro (256GB)</h3>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              Google Pixel 11 Pro (256GB)
+            </h3>
             <p>Status: Brand New</p>
             <div class="flex items-center justify-between mt-auto">
-            <span class="font-bold text-amber-500">₦1,810,000</span>
-            <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-            </button>
+              <span class="font-bold text-amber-500">₦1,810,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
             </div>
-        </div>
+          </div>
         </div>
 
         <!-- Card 3 -->
-        <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-        <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-            <img src="images/17-pro-max.JPG" alt="IPhone 17 Pro Max" class="w-full h-full object-contain">
-            <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Smartphones</span>
-            <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-            <p class="text-white font-medium mb-0.5">Quick details</p>
-            <p>Titanium build · A17 Pro chip</p>
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/17-pro-max.JPG"
+              alt="IPhone 17 Pro Max"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Smartphones</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>Titanium build · A17 Pro chip</p>
             </div>
-        </div>
-        <div class="p-4 flex flex-col gap-3 flex-1">
-            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Iphone 17 Pro Max (256 GB)
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              Iphone 17 Pro Max (256 GB)
             </h3>
-             <p>Status: Brand New</p>
+            <p>Status: Brand New</p>
             <div class="flex items-center justify-between mt-auto">
-           
-            <span class="font-bold text-amber-500">₦1,810,000</span>
-            <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-            </button>
+              <span class="font-bold text-amber-500">₦1,810,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
             </div>
-        </div>
+          </div>
         </div>
 
         <!-- Card 4 -->
-        <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-        <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-            <img src="images/Xiaomi.JPG" alt="Xiaomi" class="w-full h-full object-contain">
-            <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Smartphones</span>
-            <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-            <p class="text-white font-medium mb-0.5">Quick details</p>
-            <p>A photography-centric flagship phone featuring a massive 1-inch main camera sensor co-engineered with Leica for professional-grade mobile imagery.</p>
-
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/Xiaomi.JPG"
+              alt="Xiaomi"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Smartphones</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                A photography-centric flagship phone featuring a massive 1-inch
+                main camera sensor co-engineered with Leica for
+                professional-grade mobile imagery.
+              </p>
             </div>
-        </div>
-        <div class="p-4 flex flex-col gap-3 flex-1">
-            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Xiaomi 14 Ultra (512 GB) </h3>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              Xiaomi 14 Ultra (512 GB)
+            </h3>
             <p>Status: Brand New</p>
             <div class="flex items-center justify-between mt-auto">
-            <span class="font-bold text-amber-500">₦1,350,000</span>
-            <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-            </button>
+              <span class="font-bold text-amber-500">₦1,350,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
             </div>
-        </div>
+          </div>
         </div>
 
         <!-- Card 5 -->
-        <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-        <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-            <img src="images/S26edge.JPG" alt="S26 Edge" class="w-full h-full object-contain">
-            <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Smartphones</span>
-            <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-            <p class="text-white font-medium mb-0.5">Quick details</p>
-            <p>an ultra-slim Android smartphone released in May 2025, featuring a 5.8mm titanium frame, a 6.7-inch 120Hz display, and a 200MP main camera.</p>
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/S26edge.JPG"
+              alt="S26 Edge"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Smartphones</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                an ultra-slim Android smartphone released in May 2025, featuring
+                a 5.8mm titanium frame, a 6.7-inch 120Hz display, and a 200MP
+                main camera.
+              </p>
             </div>
-        </div>
-        <div class="p-4 flex flex-col gap-3 flex-1">
-            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Samsung S25 Edge</h3>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              Samsung S25 Edge
+            </h3>
             <p>Status: Brand New</p>
             <div class="flex items-center justify-between mt-auto">
-            <span class="font-bold text-amber-500">₦1,350,000</span>
-            <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-            </button>
+              <span class="font-bold text-amber-500">₦1,350,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
             </div>
-        </div>
+          </div>
         </div>
 
         <!-- Card 6 -->
-        <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-        <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-        <img src="images/Zflip.JPG" alt="Samsung Z flip" class="w-full h-full object-contain">
-            <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Smartphones</span>
-            <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-            <p class="text-white font-medium mb-0.5">Quick details</p>
-            <p>A chic, pocket-friendly foldable phone boasting a highly interactive outer cover screen, a reinforced hinge design, and convenient hands-free flex-mode photography.</p>
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/Zflip.JPG"
+              alt="Samsung Z flip"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Smartphones</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                A chic, pocket-friendly foldable phone boasting a highly
+                interactive outer cover screen, a reinforced hinge design, and
+                convenient hands-free flex-mode photography.
+              </p>
             </div>
-        </div>
-        <div class="p-4 flex flex-col gap-3 flex-1">
-            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Samsung Z Flip 7</h3>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              Samsung Z Flip 7
+            </h3>
             <p>Status: Brand New</p>
             <div class="flex items-center justify-between mt-auto">
-            <span class="font-bold text-amber-500"> ₦1,350,000</span>
-            <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-            </button>
+              <span class="font-bold text-amber-500"> ₦1,350,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
             </div>
-        </div>
+          </div>
         </div>
 
         <!-- Card 7 -->
-        <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-        <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-            <img src="images/Air.WEBP" alt="Iphone Air" class="w-full h-full object-contain">
-            <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Smaerphones</span>
-            <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-            <p class="text-white font-medium mb-0.5">Quick details</p>
-            <p>Industry-leading ANC · 30hr battery</p>
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/Air.WEBP"
+              alt="Iphone Air"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Smaerphones</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>Industry-leading ANC · 30hr battery</p>
             </div>
-        </div>
-        <div class="p-4 flex flex-col gap-3 flex-1">
-            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Iphone Air (256GB) </h3>
-            <P>Status: Open Box</P>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              Iphone Air (256GB)
+            </h3>
+            <p>Status: Open Box</p>
             <div class="flex items-center justify-between mt-auto">
-            <span class="font-bold text-amber-500"> ₦1,380,000</span>
-            <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-            </button>
+              <span class="font-bold text-amber-500"> ₦1,380,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
             </div>
-        </div>
+          </div>
         </div>
 
         <!-- Card 8 -->
-        <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-        <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-            <img src="images/Oppo.JPG" alt="Oppo" class="w-full h-full object-contain">
-            <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Smartphones</span>
-            <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-            <p class="text-white font-medium mb-0.5">Quick details</p>
-            <p>
-              A stylish mid-range contender focusing heavily on "AI Portrait" camera features, an eye-catching curved design, and very fast flash charging.
-            </p>
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/Oppo.JPG"
+              alt="Oppo"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Smartphones</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                A stylish mid-range contender focusing heavily on "AI Portrait"
+                camera features, an eye-catching curved design, and very fast
+                flash charging.
+              </p>
             </div>
-        </div>
-        <div class="p-4 flex flex-col gap-3 flex-1">
-            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Oppo Reno 12 Pro</h3>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              Oppo Reno 12 Pro
+            </h3>
             <p>Status: Open Box</p>
             <div class="flex items-center justify-between mt-auto">
-            <span class="font-bold text-amber-500">₦780,000</span>
-            <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-            </button>
+              <span class="font-bold text-amber-500">₦780,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
             </div>
-        </div>
+          </div>
         </div>
 
         <!-- Card 9 -->
-         <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-        <img src="images/MacBook.JPG" alt="Macbook" class="w-full h-full object-contain">
-        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Laptop</span>
-        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <p class="text-white font-medium mb-0.5">Quick details</p>
-          <p>A phenomenally thin and silent laptop that handles demanding daily tasks with ease thanks to Apple's highly efficient M3 chip architecture</p>
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/MacBook.JPG"
+              alt="Macbook"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Laptop</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                A phenomenally thin and silent laptop that handles demanding
+                daily tasks with ease thanks to Apple's highly efficient M3 chip
+                architecture
+              </p>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              MacBook Air M3 - 256GB SSD (8GB RAM)
+            </h3>
+            <p>Status: Open Box</p>
+            <div class="flex items-center justify-between mt-auto">
+              <span class="font-bold text-amber-500">₦1,850,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/Hp.AVIF"
+              alt="HP"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Laptop</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                highly popular, well-rounded work horse laptop designed for
+                students and professionals looking for dependable everyday
+                multitasking and numeric keypads.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              HP Pavilion 15 (Core i5, 13th Gen)
+            </h3>
+            <p>Status: Fairly Used</p>
+            <div class="flex items-center justify-between mt-auto">
+              <span class="font-bold text-amber-500">₦850,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/Dell-Inspiron.JPG"
+              alt="Dell"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Laptop</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                A ruggedly built, cost-effective laptop focusing on durable
+                everyday utility, featuring plenty of input ports and
+                comfortable keyboard travel.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              Dell Inspiron 15 3520 - 512 GB SSD (8GB RAM)
+            </h3>
+            <p>Status: UK Used (Clean)</p>
+            <div class="flex items-center justify-between mt-auto">
+              <span class="font-bold text-amber-500">₦550,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/Lenovo.JPG"
+              alt="Lenovo"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Laptops</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                An elegant, lightweight budget laptop featuring a lay-flat hinge
+                design, clear privacy shutter webcam, and optimized battery
+                cooling systems.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              Lenovo IdeaPad Slim 3 - 512 GB SSD (8GB RAM)
+            </h3>
+            <p>Status: Brand New</p>
+            <div class="flex items-center justify-between mt-auto">
+              <span class="font-bold text-amber-500">₦790,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/AirPods .JPG"
+              alt="Airpods pro"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Audio</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                Active Noise Cancellation (ANC), spatial audio tracking, and
+                seamless ecosystem switching.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              Airpods Pro (2nd Gen)
+            </h3>
+            <p>Status: Open Box</p>
+            <div class="flex items-center justify-between mt-auto">
+              <span class="font-bold text-amber-500">₦420,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/Galaxybuds.JPG"
+              alt="Galaxy Buds3 Pro"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Audio</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                Completely redesigned blade-style wireless earbuds with
+                integrated light strips, delivering dynamic dual-amp audio and
+                smart ambient sound control.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              Galaxy Buds3 Pro
+            </h3>
+            <p>Status: Brand New</p>
+            <div class="flex items-center justify-between mt-auto">
+              <span class="font-bold text-amber-500">₦350,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/Xiaomi-buds.PNG"
+              alt=" Xiaomi Buds 5"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Audio</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                Semi-in-ear style budget wireless buds that support
+                high-resolution lossless audio codecs and adaptive active noise
+                cancellation.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              Xiaomi Buds 5
+            </h3>
+            <p>Status: Brand New</p>
+            <div class="flex items-center justify-between mt-auto">
+              <span class="font-bold text-amber-500">₦95,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/Sonybuds.AVIF"
+              alt="Sony WF-1000XM5"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Audio</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                Premium audiophile ear gear featuring absolute top-tier noise
+                cancellation chips, rich bass output, and excellent microphone
+                call quality.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              Sony WF-1000XM5
+            </h3>
+            <p>Status: Brand New</p>
+            <div class="flex items-center justify-between mt-auto">
+              <span class="font-bold text-amber-500">₦460,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 17 -->
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/Zealot.JPG"
+              alt="Zealot S67"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Speakers</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                A booming 60W outdoor Bluetooth speaker famously popular in
+                Nigeria for its incredibly loud bass, long battery life, and
+                affordable price point.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              Zealot S67 Bluetooth Wireless Speaker
+            </h3>
+            <p>Status: Brand New</p>
+            <div class="flex items-center justify-between mt-auto">
+              <span class="font-bold text-amber-500">₦65,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/Jbl.JPG"
+              alt="JBL"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Speakers</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                A rugged, IP67 waterproof portable Bluetooth speaker featuring a
+                built-in power bank to charge your mobile phones while playing
+                loud, punchy audio.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              JBL Charge 5
+            </h3>
+            <p>Status: Brand New</p>
+            <div class="flex items-center justify-between mt-auto">
+              <span class="font-bold text-amber-500">₦260,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 19 -->
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/Onyx.JPG"
+              alt="Onyx Studio 8"
+              class="w-full h-full object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Speakers</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                A visually striking, circular home speaker crafted from
+                eco-friendly materials that self-calibrates its acoustic output
+                to match whatever room it is placed in.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              Onyx Studio 8
+            </h3>
+            <p>Status: Brand New</p>
+            <div class="flex items-center justify-between mt-auto">
+              <span class="font-bold text-amber-500">₦380,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 20 -->
+        <div
+          class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors"
+        >
+          <div
+            class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden"
+          >
+            <img
+              src="images/HomePod .PNG"
+              alt="Apple HomePod (2nd Generation)"
+              class="w-full h-full bg-white p-2 object-contain"
+            />
+            <span
+              class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400"
+              >Gadgets</span
+            >
+            <div
+              class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <p class="text-white font-medium mb-0.5">Quick details</p>
+              <p>
+                A premium home smart speaker offering deep acoustic fidelity,
+                rich omnidirectional bass, and smart home automation control via
+                Apple Siri.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col gap-3 flex-1">
+            <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">
+              Apple HomePod (2nd Generation)
+            </h3>
+            <p>Status: Brand New</p>
+            <div class="flex items-center justify-between mt-auto">
+              <span class="font-bold text-amber-500">₦490,000</span>
+              <button
+                class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to
+                cart
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="p-4 flex flex-col gap-3 flex-1">
-        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">MacBook Air M3 - 256GB SSD (8GB RAM)</h3>
-        <p>Status: Open Box</p>
-        <div class="flex items-center justify-between mt-auto">
-          <span class="font-bold text-amber-500">₦1,850,000</span>
-          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-            <i class="fa-solid fa-cart-shopping text-[11px] "></i> Add to cart
-          </button>
+    </section>
+
+    <!-- Availability -->
+    <section class="px-10 py-10 bg-slate-50">
+      <div
+        class="rounded-lg border border-slate-700 bg-slate-800 px-6 py-10 md:px-10"
+      >
+        <div
+          class="flex flex-col md:flex-row md:flex-wrap gap-10 justify-between"
+        >
+          <div class="flex items-start gap-4 flex-1 min-w-[200px]">
+            <div
+              class="w-11 h-11 rounded-lg bg-slate-700 flex items-center justify-center shrink-0"
+            >
+              <i class="fa-solid fa-truck-fast text-amber-400"></i>
+            </div>
+            <div>
+              <h3 class="text-white font-semibold mb-1">
+                Fast &amp; reliable delivery
+              </h3>
+              <p class="text-sm text-slate-400">
+                Most orders ship same-day and arrive within 48 hours.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 flex-1 min-w-[200px]">
+            <div
+              class="w-11 h-11 rounded-lg bg-slate-700 flex items-center justify-center shrink-0"
+            >
+              <i class="fa-solid fa-headset text-amber-400"></i>
+            </div>
+            <div>
+              <h3 class="text-white font-semibold mb-1">
+                Customer service, 24/7
+              </h3>
+              <p class="text-sm text-slate-400">
+                Real people, always on, for setup help or returns.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 flex-1 min-w-[200px]">
+            <div
+              class="w-11 h-11 rounded-lg bg-slate-700 flex items-center justify-center shrink-0"
+            >
+              <i class="fa-solid fa-shield-halved text-amber-400"></i>
+            </div>
+            <div>
+              <h3 class="text-white font-semibold mb-1">Secure checkout</h3>
+              <p class="text-sm text-slate-400">
+                Encrypted payments, every time, no exceptions.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 flex-1 min-w-[200px]">
+            <div
+              class="w-11 h-11 rounded-lg bg-slate-700 flex items-center justify-center shrink-0"
+            >
+              <i class="fa-solid fa-certificate text-amber-400"></i>
+            </div>
+            <div>
+              <h3 class="text-white font-semibold mb-1">Genuine warranty</h3>
+              <p class="text-sm text-slate-400">
+                Every device is authentic and covered on arrival.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Card 10 -->
-    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-        <img src="images/Hp.AVIF" alt="HP" class="w-full h-full object-contain">
-        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Laptop</span>
-        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <p class="text-white font-medium mb-0.5">Quick details</p>
-          <p>
-            highly popular, well-rounded work horse laptop designed for students and professionals looking for dependable everyday multitasking and numeric keypads.
-          </p>
+    <!-- Ads section/Giveaway -->
+    <section class="px-10 py-10 bg-slate-50">
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Deal card -->
+        <div
+          class="rounded-lg p-8 md:p-10 flex flex-col justify-between min-h-[260px] bg-slate-800 border border-slate-700"
+        >
+          <div>
+            <p class="text-amber-400 text-sm font-semibold mb-3">
+              Weekend reset
+            </p>
+            <h3 class="text-white text-3xl font-bold mb-3 max-w-xs">
+              30% off every pair of audio gear
+            </h3>
+            <p class="text-sm text-slate-400 max-w-sm">
+              Headphones, earbuds and speakers — discount applies automatically
+              at checkout, no code needed.
+            </p>
+          </div>
+          <div class="flex items-center gap-6 mt-8">
+            <button
+              class="px-5 py-3 rounded-full font-semibold text-sm bg-amber-400 text-slate-900 hover:bg-amber-300 transition-colors"
+            >
+              Shop the deal
+            </button>
+            <div class="flex items-center gap-2 text-sm text-slate-400">
+              <i class="fa-regular fa-clock"></i>
+              <span>Ends in 47:12:00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Giveaway card -->
+        <div
+          class="rounded-lg p-8 md:p-10 flex flex-col justify-between min-h-[260px] bg-slate-900 border border-slate-700"
+        >
+          <div>
+            <p class="text-amber-400 text-sm font-semibold mb-3">
+              This month's giveaway
+            </p>
+            <h3 class="text-white text-3xl font-bold mb-3 max-w-xs">
+              Win a PlayStation 5 &amp; two controllers
+            </h3>
+            <p class="text-sm text-slate-400 max-w-sm">
+              Every purchase over $50 earns an entry. Winner announced live at
+              month end.
+            </p>
+          </div>
+          <div class="flex items-center gap-6 mt-8">
+            <button
+              class="px-5 py-3 rounded-full font-semibold text-sm border border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-slate-900 transition-colors"
+            >
+              Enter giveaway
+            </button>
+            <div class="flex items-center gap-2 text-sm text-slate-400">
+              <i class="fa-solid fa-users"></i>
+              <span>3,214 entries so far</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="p-4 flex flex-col gap-3 flex-1">
-        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">HP Pavilion 15 (Core i5, 13th Gen)</h3>
-        <p>Status: Fairly Used</p>
-        <div class="flex items-center justify-between mt-auto">
-          <span class="font-bold text-amber-500">₦850,000</span>
-          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-          </button>
-        </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- Card 11 -->
-    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-        <img src="images/Dell-Inspiron.JPG" alt="Dell" class="w-full h-full object-contain">
-        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Laptop</span>
-        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <p class="text-white font-medium mb-0.5">Quick details</p>
-          <p>
-            A ruggedly built, cost-effective laptop focusing on durable everyday utility, featuring plenty of input ports and comfortable keyboard travel.
-          </p>
-        </div>
-      </div>
-      <div class="p-4 flex flex-col gap-3 flex-1">
-        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Dell Inspiron 15 3520 -  512 GB SSD (8GB RAM)</h3>
-        <p>Status: UK Used (Clean) </p>
-        <div class="flex items-center justify-between mt-auto">
-          <span class="font-bold text-amber-500">₦550,000</span>
-          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 12 -->
-    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-        <img src="images/Lenovo.JPG" alt="Lenovo" class="w-full h-full object-contain">
-        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Laptops</span>
-        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <p class="text-white font-medium mb-0.5">Quick details</p>
-          <p>An elegant, lightweight budget laptop featuring a lay-flat hinge design, clear privacy shutter webcam, and optimized battery cooling systems.</p>
-        </div>
-      </div>
-      <div class="p-4 flex flex-col gap-3 flex-1">
-        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]"> Lenovo IdeaPad Slim 3 - 512 GB SSD (8GB RAM)</h3>
-        <p>Status: Brand New</p>
-        <div class="flex items-center justify-between mt-auto">
-          <span class="font-bold text-amber-500">₦790,000</span>
-          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 13 -->
-    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-        <img src="images/AirPods .JPG" alt="Airpods pro" class="w-full h-full object-contain">
-        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Audio</span>
-        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <p class="text-white font-medium mb-0.5">Quick details</p>
-          <p>
-            Active Noise Cancellation (ANC), spatial audio tracking, and seamless ecosystem switching.
-          </p>
-        </div>
-      </div>
-      <div class="p-4 flex flex-col gap-3 flex-1">
-        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Airpods Pro (2nd Gen)</h3>
-        <p>Status: Open Box</p>
-        <div class="flex items-center justify-between mt-auto">
-          <span class="font-bold text-amber-500">₦420,000</span>
-          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 14 -->
-    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-        <img src="images/Galaxybuds.JPG" alt="Galaxy Buds3 Pro" class="w-full h-full object-contain">
-        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Audio</span>
-        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <p class="text-white font-medium mb-0.5">Quick details</p>
-          <p>
-            Completely redesigned blade-style wireless earbuds with integrated light strips, delivering dynamic dual-amp audio and smart ambient sound control.
-          </p>
-        </div>
-      </div>
-      <div class="p-4 flex flex-col gap-3 flex-1">
-        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Galaxy Buds3 Pro</h3>
-        <p>Status: Brand New</p>
-        <div class="flex items-center justify-between mt-auto">
-          <span class="font-bold text-amber-500">₦350,000</span>
-          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 15 -->
-    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-        <img src="images/Xiaomi-buds.PNG" alt=" Xiaomi Buds 5" class="w-full h-full object-contain">
-        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Audio</span>
-        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <p class="text-white font-medium mb-0.5">Quick details</p>
-          <p>
-            Semi-in-ear style budget wireless buds that support high-resolution lossless audio codecs and adaptive active noise cancellation.
-          </p>
-        </div>
-      </div>
-      <div class="p-4 flex flex-col gap-3 flex-1">
-        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]"> Xiaomi Buds 5</h3>
-        <p>Status: Brand New</p>
-        <div class="flex items-center justify-between mt-auto">
-          <span class="font-bold text-amber-500">₦95,000</span>
-          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 16 -->
-    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-        <img src="images/Sonybuds.AVIF" alt="Sony WF-1000XM5" class="w-full h-full object-contain">
-        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Audio</span>
-        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <p class="text-white font-medium mb-0.5">Quick details</p>
-          <p>
-            Premium audiophile ear gear featuring absolute top-tier noise cancellation chips, rich bass output, and excellent microphone call quality.
-          </p>
-        </div>
-      </div>
-      <div class="p-4 flex flex-col gap-3 flex-1">
-        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Sony WF-1000XM5</h3>
-        <p>Status: Brand New</p>
-        <div class="flex items-center justify-between mt-auto">
-          <span class="font-bold text-amber-500">₦460,000</span>
-          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 17 -->
-    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-        <img src="images/Zealot.JPG" alt="Zealot S67" class="w-full h-full object-contain">
-        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Speakers</span>
-        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <p class="text-white font-medium mb-0.5">Quick details</p>
-          <p>
-            A booming 60W outdoor Bluetooth speaker famously popular in Nigeria for its incredibly loud bass, long battery life, and affordable price point.
-          </p>
-        </div>
-      </div>
-      <div class="p-4 flex flex-col gap-3 flex-1">
-        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Zealot S67 Bluetooth Wireless Speaker</h3>
-        <P>Status: Brand New</P>
-        <div class="flex items-center justify-between mt-auto">
-          <span class="font-bold text-amber-500">₦65,000</span>
-          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 18 -->
-    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-        <img src="images/Jbl.JPG" alt="JBL" class="w-full h-full object-contain">
-        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Speakers</span>
-        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <p class="text-white font-medium mb-0.5">Quick details</p>
-          <p>A rugged, IP67 waterproof portable Bluetooth speaker featuring a built-in power bank to charge your mobile phones while playing loud, punchy audio.</p>
-        </div>
-      </div>
-      <div class="p-4 flex flex-col gap-3 flex-1">
-        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">JBL Charge 5</h3>
-        <p>Status: Brand New</p>
-        <div class="flex items-center justify-between mt-auto">
-          <span class="font-bold text-amber-500">₦260,000</span>
-          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 19 -->
-    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-        <img src="images/Onyx.JPG" alt="Onyx Studio 8" class="w-full h-full object-contain">
-        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Speakers</span>
-        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <p class="text-white font-medium mb-0.5">Quick details</p>
-          <p>
-             A visually striking, circular home speaker crafted from eco-friendly materials that self-calibrates its acoustic output to match whatever room it is placed in.
-          </p>
-        </div>
-      </div>
-      <div class="p-4 flex flex-col gap-3 flex-1">
-        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Onyx Studio 8</h3>
-        <p>Status: Brand New</p>
-        <div class="flex items-center justify-between mt-auto">
-          <span class="font-bold text-amber-500">₦380,000</span>
-          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 20 -->
-    <div class="group bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col hover:border-amber-400 transition-colors">
-      <div class="relative aspect-square bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-        <img src="images/HomePod .PNG" alt="Apple HomePod (2nd Generation)" class="w-full h-full object-contain">
-        <span class="absolute top-3 left-3 text-[10px] font-semibold px-2 py-1 rounded-full bg-slate-900 text-amber-400">Gadgets</span>
-        <div class="absolute inset-x-0 bottom-0 bg-slate-900 text-slate-300 text-xs p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <p class="text-white font-medium mb-0.5">Quick details</p>
-          <p>
-            A  premium home smart speaker offering deep acoustic fidelity, rich omnidirectional bass, and smart home automation control via Apple Siri.
-          </p>
-        </div>
-      </div>
-      <div class="p-4 flex flex-col gap-3 flex-1">
-        <h3 class="text-sm font-semibold text-slate-800 min-h-[2.5rem]">Apple HomePod (2nd Generation)</h3>
-        <p>Status: Brand New</p>
-        <div class="flex items-center justify-between mt-auto">
-          <span class="font-bold text-amber-500">₦490,000</span>
-          <button class="text-xs font-semibold px-3 py-2 rounded-full bg-slate-800 text-white hover:bg-amber-400 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-            <i class="fa-solid fa-cart-shopping text-[11px]"></i> Add to cart
-          </button>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- Availability -->
-<section class="px-10 py-10 bg-slate-50">
-  <div class="rounded-lg border border-slate-700 bg-slate-800 px-6 py-10 md:px-10">
-    <div class="flex flex-col md:flex-row md:flex-wrap gap-10 justify-between">
-
-      <div class="flex items-start gap-4 flex-1 min-w-[200px]">
-        <div class="w-11 h-11 rounded-lg bg-slate-700 flex items-center justify-center shrink-0">
-          <i class="fa-solid fa-truck-fast text-amber-400"></i>
-        </div>
-        <div>
-          <h3 class="text-white font-semibold mb-1">Fast &amp; reliable delivery</h3>
-          <p class="text-sm text-slate-400">Most orders ship same-day and arrive within 48 hours.</p>
-        </div>
-      </div>
-
-      <div class="flex items-start gap-4 flex-1 min-w-[200px]">
-        <div class="w-11 h-11 rounded-lg bg-slate-700 flex items-center justify-center shrink-0">
-          <i class="fa-solid fa-headset text-amber-400"></i>
-        </div>
-        <div>
-          <h3 class="text-white font-semibold mb-1">Customer service, 24/7</h3>
-          <p class="text-sm text-slate-400">Real people, always on, for setup help or returns.</p>
-        </div>
-      </div>
-
-      <div class="flex items-start gap-4 flex-1 min-w-[200px]">
-        <div class="w-11 h-11 rounded-lg bg-slate-700 flex items-center justify-center shrink-0">
-          <i class="fa-solid fa-shield-halved text-amber-400"></i>
-        </div>
-        <div>
-          <h3 class="text-white font-semibold mb-1">Secure checkout</h3>
-          <p class="text-sm text-slate-400">Encrypted payments, every time, no exceptions.</p>
-        </div>
-      </div>
-
-      <div class="flex items-start gap-4 flex-1 min-w-[200px]">
-        <div class="w-11 h-11 rounded-lg bg-slate-700 flex items-center justify-center shrink-0">
-          <i class="fa-solid fa-certificate text-amber-400"></i>
-        </div>
-        <div>
-          <h3 class="text-white font-semibold mb-1">Genuine warranty</h3>
-          <p class="text-sm text-slate-400">Every device is authentic and covered on arrival.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-<!-- Ads section/Giveaway -->
-<section class="px-10 py-10 bg-slate-50">
-  <div class="grid md:grid-cols-2 gap-6">
-
-    <!-- Deal card -->
-    <div class="rounded-lg p-8 md:p-10 flex flex-col justify-between min-h-[260px] bg-slate-800 border border-slate-700">
-      <div>
-        <p class="text-amber-400 text-sm font-semibold mb-3">Weekend reset</p>
-        <h3 class="text-white text-3xl font-bold mb-3 max-w-xs">30% off every pair of audio gear</h3>
-        <p class="text-sm text-slate-400 max-w-sm">Headphones, earbuds and speakers — discount applies automatically at checkout, no code needed.</p>
-      </div>
-      <div class="flex items-center gap-6 mt-8">
-        <button class="px-5 py-3 rounded-full font-semibold text-sm bg-amber-400 text-slate-900 hover:bg-amber-300 transition-colors">Shop the deal</button>
-        <div class="flex items-center gap-2 text-sm text-slate-400">
-          <i class="fa-regular fa-clock"></i>
-          <span>Ends in 47:12:00</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Giveaway card -->
-    <div class="rounded-lg p-8 md:p-10 flex flex-col justify-between min-h-[260px] bg-slate-900 border border-slate-700">
-      <div>
-        <p class="text-amber-400 text-sm font-semibold mb-3">This month's giveaway</p>
-        <h3 class="text-white text-3xl font-bold mb-3 max-w-xs">Win a PlayStation 5 &amp; two controllers</h3>
-        <p class="text-sm text-slate-400 max-w-sm">Every purchase over $50 earns an entry. Winner announced live at month end.</p>
-      </div>
-      <div class="flex items-center gap-6 mt-8">
-        <button class="px-5 py-3 rounded-full font-semibold text-sm border border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-slate-900 transition-colors">Enter giveaway</button>
-        <div class="flex items-center gap-2 text-sm text-slate-400">
-          <i class="fa-solid fa-users"></i>
-          <span>3,214 entries so far</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
+    
 
 
 
 
+    <footer class="bg-slate-900 px-6 py-8 text-center">
+        <h3 class="text-amber-400 font-bold text-xl mb-1">Teeboi<span class="text-white">Gadg</span></h3>
+        <p class="text-slate-400 text-sm mb-3">Your trusted partner in technology</p>
+        <p class="text-slate-200 text-xs">&copy; 2026 TeeboiGadg. All rights reserved.</p>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
-
-<script src="javascript/script.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-   
-
-</body>
+    <script src="javascript/script.js"></script>
+  </body>
 </html>
-
-
-
